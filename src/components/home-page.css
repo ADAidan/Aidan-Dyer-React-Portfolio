@@ -1,0 +1,22 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.about-container h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-container p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-container em {
+    color: #61dafb;
+    font-style: normal;
+}

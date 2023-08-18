@@ -1,0 +1,53 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: #ccc 0px 0px 5px 0px;
+    background-color: #454545;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.certification-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-shadow: #ccc 0px 0px 5px 0px;
+    background-color: #454545;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.certification-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.certification-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 1rem;
+}
+
+.certification-info * {
+    text-align: left;
+    margin: 1rem;
+    padding: 0;
+}
+
+.card-button {
+    background-color: #61dafb;
+    border-radius: 1rem;
+    padding: 1rem;
+}
