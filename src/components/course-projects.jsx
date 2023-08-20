@@ -3,6 +3,7 @@ import Mail from '/images/mail-project.png';
 import Commerce from '/images/commerce-project.png';
 import Wiki from '/images/wiki-clone-project.png';
 import Harvard from '/images/harvard_logo.jpg';
+import './projects.css';
 
 export default function CourseProjects() {
     return (

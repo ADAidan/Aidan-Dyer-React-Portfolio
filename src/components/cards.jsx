@@ -6,7 +6,7 @@ export const ProjectCard = (props) => {
         <div className='project-card'>
             <img src={props.image} alt='image'></img>
             <div className='project-info'>
-                <h2>{props.title}</h2>
+                <h2 className='card-title'>{props.title}</h2>
                 <p>{props.description}</p>
                 { props.url && 
                 <a className='card-button' 

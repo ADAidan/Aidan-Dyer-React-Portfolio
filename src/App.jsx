@@ -7,8 +7,8 @@ function App() {
     <div style={{
       height: '100vh',
     }}className="app-container">
-      <NavBar/>
-      <Outlet/>
+      <NavBar />
+      <Outlet />
     </div>
   )
 }

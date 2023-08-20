@@ -17,6 +17,6 @@
 }
 
 .about-container em {
-    color: #61dafb;
+    color: var(--accent-color);
     font-style: normal;
 }

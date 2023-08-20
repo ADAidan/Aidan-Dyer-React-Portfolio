@@ -1,0 +1,34 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 1.5fr;
+  background-color: var(--secondary-background-color);
+  grid-row: 1;
+  padding: 0;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 1rem;
+  padding: 0 1rem;
+  background-color: var(--accent-color);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease;
+}
+
+.nav-items a:active {
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(2px, 2px); /* Creates the pressed effect */
+}
+
+.nav-items a:hover {
+  color: #aaa;
+}

@@ -1,0 +1,50 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  padding: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 1rem;
+  background-color: var(--background-color);
+}
+
+.contact-info p {
+    font-size: 2rem;
+    margin: 0;
+    padding: .5rem;
+    color: var(--accent-color);
+}
+
+.contact-info a {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--secondary-background-color);
+}
+
+.resume-container p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: .5rem;
+    color: var(--secondary-color);
+}
+
+.resume-container a {
+    margin: 1rem;
+    padding: 0;
+    text-decoration: none;
+    color: var(--accent-color);
+}

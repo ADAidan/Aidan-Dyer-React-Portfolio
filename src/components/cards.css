@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 1rem;
-    box-shadow: #ccc 0px 0px 5px 0px;
-    background-color: #454545;
+    background-color: var(--secondary-background-color);
     margin: .5rem;
     padding: 1rem;
 }
@@ -19,10 +17,10 @@
 .certification-card {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid var(--accent-color);
     border-radius: 1rem;
-    box-shadow: #ccc 0px 0px 5px 0px;
-    background-color: #454545;
+    box-shadow: var(--accent-color) 0px 0px 5px 0px;
+    background-color: var(--secondary-background-color);
     margin: 1rem;
     padding: .5rem;
 }
@@ -47,7 +45,18 @@
 }
 
 .card-button {
-    background-color: #61dafb;
+    background-color: var(--accent-color);
+    color: var(--secondary-background-color);
     border-radius: 1rem;
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.card-title {
+    color: var(--accent-color);
 }
