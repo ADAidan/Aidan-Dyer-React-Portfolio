@@ -15,12 +15,14 @@ export default function PersonalProjects() {
                 image={WeatherWebsite}
                 title='Weather Website'
                 description='A website that displays the weather of a given location.'
+                completionDate='August 2023'
                 url='/'
             />
             <ProjectCard 
                 image={ShoppingCart}
                 title='Shopping Cart'
                 description='A shopping cart that allows users to add items to a cart.'
+                completionDate='July 2023'
                 url='/'
             />
             <h1 className='other-projects'>Other Projects</h1>

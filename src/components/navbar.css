@@ -1,9 +1,27 @@
+@media (min-width: 0px) and (max-width: 768px) {
+  .nav-container .navbar {
+    display: none;
+  }
+  .nav-container .mobile-menu {
+    display: flex;
+  }
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 1.5fr 5fr 1.5fr;
   background-color: var(--secondary-background-color);
   grid-row: 1;
   padding: 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.my-name {
+  color: var(--primary-color);
+  text-shadow: 1px 1px #d63628, 2px 2px #bf301f, 3px 3px #a72a16;
 }
 
 .nav-items {
@@ -19,7 +37,7 @@
   color: #fff;
   margin: 1rem;
   padding: 0 1rem;
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.1s ease;
 }

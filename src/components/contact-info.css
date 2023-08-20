@@ -16,7 +16,7 @@
     font-size: 2rem;
     margin: 0;
     padding: .5rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 .contact-info a {
@@ -24,7 +24,7 @@
     margin: 1rem;
     padding: 0;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 .resume-container {
@@ -39,12 +39,12 @@
     font-size: 1.5rem;
     margin: 0;
     padding: .5rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .resume-container a {
     margin: 1rem;
     padding: 0;
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }

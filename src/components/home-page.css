@@ -6,16 +6,16 @@
 }
 
 .about-container h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 3.75rem;
+    margin-bottom: 0;
 }
 
 .about-container p {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-bottom: 1rem;
 }
 
 .about-container em {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-style: normal;
 }

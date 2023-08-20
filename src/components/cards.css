@@ -4,14 +4,20 @@
     align-items: center;
     border-radius: 1rem;
     background-color: var(--secondary-background-color);
+    box-shadow: var(--accent-color) 0px 0px 5px 0px;
     margin: .5rem;
     padding: 1rem;
 }
 
 .project-card img {
+    box-shadow: var(--accent-color) 0px 0px 5px 1px;
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.completion-date {
+    color: var(--text-color);
 }
 
 .certification-card {
@@ -71,5 +77,5 @@
 }
 
 .card-title {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }

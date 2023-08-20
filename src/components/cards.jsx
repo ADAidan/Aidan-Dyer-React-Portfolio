@@ -8,6 +8,9 @@ export const ProjectCard = (props) => {
             <div className='project-info'>
                 <h2 className='card-title'>{props.title}</h2>
                 <p>{props.description}</p>
+                { props.completionDate &&
+                    <p className='completion-date'>Completed {props.completionDate}</p>
+                }
                 <div className='card-button-container'>
                     { props.url && 
                     <a className='card-button-outline' 

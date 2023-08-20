@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #28AFB0;
+  --shadow-color1: #1f9a90;
+  --shadow-color2: #177d70;
+  --shadow-color3: #0f6050;
+}
 
 .personal-projects-container {
   display: grid;
@@ -12,9 +18,10 @@
   margin: 1rem .5rem;
   padding: 0 1rem;
   border-radius: 1rem;
-  color: var(--accent-color);
+  color: var(--secondary-color);
   background-color: var(--secondary-background-color);
-  text-shadow: 1px 1px #FFC300, 2px 2px #FF5733, 3px 3px #DAF7A6;
+  text-shadow: 1px 1px var(--shadow-color1), 2px 2px var(--shadow-color2), 3px 3px var(--shadow-color3);
+  box-shadow: var(--accent-color) 0px 0px 5px 0px;
 }
 
 .personal-projects-container .other-projects {
@@ -23,9 +30,10 @@
   margin: .5rem;
   padding: 0 1rem;
   border-radius: 1rem;
-  color: var(--accent-color);
+  color: var(--secondary-color);
   background-color: var(--secondary-background-color);
-  text-shadow: 1px 1px #FFC300, 2px 2px #FF5733, 3px 3px #DAF7A6;
+  text-shadow: 1px 1px var(--shadow-color1), 2px 2px var(--shadow-color2), 3px 3px var(--shadow-color3);
+  box-shadow: var(--accent-color) 0px 0px 5px 0px;
 }
 
 .course-projects-container {
@@ -41,7 +49,8 @@
   margin: 1rem .5rem;
   padding: 0 1rem;
   border-radius: 1rem;
-  color: var(--accent-color);
+  color: var(--secondary-color);
   background-color: var(--secondary-background-color);
-  text-shadow: 1px 1px #FFC300, 2px 2px #FF5733, 3px 3px #DAF7A6;
+  text-shadow: 1px 1px var(--shadow-color1), 2px 2px var(--shadow-color2), 3px 3px var(--shadow-color3);
+  box-shadow: var(--accent-color) 0px 0px 5px 0px;
 }

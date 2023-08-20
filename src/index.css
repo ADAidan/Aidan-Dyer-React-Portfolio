@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #8D8D92;
-  --secondary-color: #0A85FF;
-  --accent-color: #EF3E36;
+  --primary-color: #EF3E36;
+  --secondary-color: #28AFB0;
+  --accent-color: #FDCB6E;
   --text-color: #393D3F;
   --background-color: #E0E0E0;
   --secondary-background-color: #FFFFFF;
   
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
