@@ -7,7 +7,7 @@ import './projects.css';
 
 export default function CourseProjects() {
     return (
-        <div className="course-projects-container">
+        <div className="course-projects-container main-container">
             <h1 className='course-projects'>Course Projects</h1>
             <ProjectCard 
                 image={Mail}

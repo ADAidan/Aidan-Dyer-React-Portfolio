@@ -44,16 +44,29 @@
     padding: 0;
 }
 
-.card-button {
-    background-color: var(--accent-color);
+.card-button-outline {
+    background-color: var(--secondary-color);
     color: var(--secondary-background-color);
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
-.card-button:hover {
-    background-color: var(--accent-color);
+.card-button-outline:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.card-button-solid {
+    background-color: var(--secondary-color);
+    color: var(--secondary-background-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-button-solid:hover {
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }
 

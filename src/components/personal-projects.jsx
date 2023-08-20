@@ -9,7 +9,7 @@ import './projects.css';
 
 export default function PersonalProjects() {
     return (
-        <div className='personal-projects-container'>
+        <div className='personal-projects-container main-container'>
             <h1 className='featured-projects'>Featured Projects</h1>
             <ProjectCard 
                 image={WeatherWebsite}
