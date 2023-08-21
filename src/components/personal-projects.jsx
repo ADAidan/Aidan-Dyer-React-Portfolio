@@ -13,29 +13,60 @@ export default function PersonalProjects() {
             <h1 className='featured-projects'>Featured Projects</h1>
             <ProjectCard 
                 image={WeatherWebsite}
-                title='Weather Website'
-                description='A website that displays the weather of a given location.'
+                title='Dynamic Weather Application'
+                description='
+                Built with React, this interactive weather application 
+                leverages the OpenWeather API and MapBox Search Box to 
+                provide real-time weather data. My focus was on 
+                practicing API data fetching and applying design 
+                principles for the first time. This project showcases 
+                my ability to combine design with efficient 
+                functionality, offering a seamless user experience 
+                across devices.
+                '
                 completionDate='August 2023'
                 url='/'
             />
             <ProjectCard 
                 image={ShoppingCart}
-                title='Shopping Cart'
-                description='A shopping cart that allows users to add items to a cart.'
+                title='React Shopping Cart'
+                description='
+                This project is an e-commerce website built using React.
+                It showcases modern Web Development practices such as
+                React Hooks, React Router and functional components. 
+                The website is mobile-friendly and provides a seamless
+                user experience. I used Material-ui for the styling.
+                '
                 completionDate='July 2023'
                 url='/'
             />
             <h1 className='other-projects'>Other Projects</h1>
             <ProjectCard 
                 image={ChessWebsite}
-                title='Chess Website'
-                description='A website that allows users to play chess against a computer.'
+                title='Full-stack Chess Website'
+                description='
+                This is a full-stack application built 
+                using React and AWS, designed to provide both online 
+                and offline play. Integrating AWS Amplify 
+                and AWS Cognito for user authentication, 
+                it showcases my ability to handle intricate back-end 
+                processes. The project leverages chessboardjsx and 
+                Chess.js for the chessboard interface and 
+                game logic, respectively. An ambitious step in my 
+                development journey, this project highlights my skills 
+                in building scalable applications, with upcoming 
+                features including online play against others, 
+                and user statistics management via AWS databases.
+                '
                 url='/'
             />
             <ProjectCard 
                 image={ReactNotes}
                 title='Note Taking Website'
-                description='A website that allows users to take notes.'
+                description='
+                One of the first websites I created using React.
+                This project was good pratice for learning React State management.
+                '
                 url='/'
             />
             <ProjectCard 
