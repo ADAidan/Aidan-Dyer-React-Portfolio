@@ -51,16 +51,17 @@
 }
 
 .card-button-outline {
-    background-color: var(--secondary-color);
-    color: var(--secondary-background-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.3s ease-in-out;
+    margin: 1rem;
 }
 
 .card-button-outline:hover {
     background-color: var(--secondary-color);
-    color: var(--text-color);
+    color: var(--secondary-background-color);
 }
 
 .card-button-solid {
@@ -72,8 +73,8 @@
 }
 
 .card-button-solid:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
 }
 
 .card-title {

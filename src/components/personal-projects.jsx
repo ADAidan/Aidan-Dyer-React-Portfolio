@@ -1,6 +1,6 @@
 import { ProjectCard } from './cards';
 import WeatherWebsite from '/images/weather-website.png';
-import ShoppingCart from '/images/shopping-cart-project.png';
+import ShoppingCart from '/images/shopping-cart-desktop.png';
 import ChessWebsite from '/images/react-chess.png';
 import ReactNotes from '/images/notes-project.png';
 import StocksDashboard from '/images/stocks-dashboard.png';
@@ -11,6 +11,20 @@ export default function PersonalProjects() {
     return (
         <div className='personal-projects-container main-container'>
             <h1 className='featured-projects'>Featured Projects</h1>
+            <ProjectCard 
+                image={ShoppingCart}
+                title='React Shopping Cart'
+                description='
+                This project is an e-commerce website built using React.
+                It showcases modern Web Development practices such as
+                React Hooks, React Router and functional components. 
+                The website is mobile-friendly and provides a seamless
+                user experience.
+                '
+                completionDate='July 2023'
+                url='https://github.com/ADAidan/React-Shopping-Cart'
+                demoUrl='https://react-shoppingcart-demo.netlify.app/'
+            />
             <ProjectCard 
                 image={WeatherWebsite}
                 title='Dynamic Weather Application'
@@ -25,20 +39,8 @@ export default function PersonalProjects() {
                 across devices.
                 '
                 completionDate='August 2023'
-                url='/'
-            />
-            <ProjectCard 
-                image={ShoppingCart}
-                title='React Shopping Cart'
-                description='
-                This project is an e-commerce website built using React.
-                It showcases modern Web Development practices such as
-                React Hooks, React Router and functional components. 
-                The website is mobile-friendly and provides a seamless
-                user experience. I used Material-ui for the styling.
-                '
-                completionDate='July 2023'
-                url='/'
+                url='https://github.com/ADAidan/React-Weather-App'
+                demoUrl='https://react-weatherapp-demo.netlify.app/'
             />
             <h1 className='other-projects'>Other Projects</h1>
             <ProjectCard 

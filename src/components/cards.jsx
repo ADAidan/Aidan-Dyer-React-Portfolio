@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './cards.css';
 
 export const ProjectCard = (props) => {
@@ -13,12 +12,12 @@ export const ProjectCard = (props) => {
                 }
                 <div className='card-button-container'>
                     { props.url && 
-                    <a className='card-button-outline' 
+                    <a className='card-button-solid' 
                     href={props.url} target='_blank'>
                         View on Github
                     </a> }
                     { props.demoUrl &&
-                    <a className='card-button-solid'
+                    <a className='card-button-outline'
                     href={props.demoUrl} target='_blank'>
                         Visit Website
                     </a> }
