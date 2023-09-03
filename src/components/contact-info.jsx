@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faDownload, faFile } from '@fortawesome/free-solid-svg-icons';
 import './contact-info.css';
 
 export default function ContactInfo() {
@@ -17,7 +17,8 @@ export default function ContactInfo() {
             <div className='resume-container'>
                 <h1>My Resume</h1>
                 <div>
-                    <p><FontAwesomeIcon icon={faDownload} /><a>Download Resume</a></p>
+                    <p><FontAwesomeIcon icon={faFile} /><a href="/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a></p>
+                    <p><FontAwesomeIcon icon={faDownload} /><a href='/resume.pdf' download>Download Resume</a></p>
                 </div>
             </div>
         </div>
