@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 function ContactForm() {
-    const [formData, setFormData] = useState({
+    const [myFormData, setMyFormData] = useState({
         name: '',
         email: '',
         subject: '',
@@ -16,24 +16,30 @@ function ContactForm() {
         subject: '',
         message: ''
     });
+    const [error, setError] = useState(false);
     
     const handleChange = (e) => {
         const { id, value } = e.target;
 
-        setFormData((formData) => ({
-            ...formData,
+        setMyFormData((myFormData) => ({
+            ...myFormData,
             [id]: value
         }));
     };
 
     const handleSubmit = (e) => {
+        console.log('clicked submit');
+        console.log(myFormData);
         e.preventDefault();
-        for (let key in formData) {
-            if (formData[key] === '') {
+        if (error) setError(false);
+        for (let key in myFormData) {
+            if (myFormData[key] === '') {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
                     [key]: 'This field is required'
                 }));
+                setError(true);
+                return;
             } else {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
@@ -42,8 +48,17 @@ function ContactForm() {
             }
         }
 
-        console.log('clicked submit');
+        const myForm = e.target;
+        const formData = new FormData(myForm);
         console.log(formData);
+        
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+            .then(() => alert("Form successfully submitted"))
+            .catch((error) => alert(error));
     };
 
     return (
@@ -64,7 +79,7 @@ function ContactForm() {
                 label="Name" 
                 variant="outlined" 
                 margin='normal'
-                value={formData.name}
+                value={myFormData.name}
                 onChange={handleChange}
                 error={!!formErrors.name}
                 helperText={formErrors.name}
@@ -75,7 +90,7 @@ function ContactForm() {
                 label="Email" 
                 variant="outlined" 
                 margin='normal'
-                value={formData.email}
+                value={myFormData.email}
                 onChange={handleChange}
                 error={!!formErrors.email}
                 helperText={formErrors.email}
@@ -86,7 +101,7 @@ function ContactForm() {
                 label="Subject" 
                 variant="outlined" 
                 margin='normal'
-                value={formData.subject}
+                value={myFormData.subject}
                 onChange={handleChange}
                 error={!!formErrors.subject}
                 helperText={formErrors.subject}
@@ -99,7 +114,7 @@ function ContactForm() {
                 label="Message" 
                 variant="outlined" 
                 margin='normal'
-                value={formData.message}
+                value={myFormData.message}
                 onChange={handleChange}
                 error={!!formErrors.message}
                 helperText={formErrors.message}
@@ -113,41 +128,6 @@ function ContactForm() {
             </Button>
         </Box>
     );
-}
-
-function contactform() {
-  return (
-    <form className='contact-form' onSubmit={handleSubmit}>
-      <input 
-        type="text" 
-        name="name" 
-        placeholder="Name" 
-        value={formData.name} 
-        onChange={handleChange}
-      />
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="Email" 
-        value={formData.email} 
-        onChange={handleChange}
-      />
-      <input 
-        type="text" 
-        name="subject" 
-        placeholder="Subject" 
-        value={formData.subject} 
-        onChange={handleChange}
-      />
-      <textarea 
-        name="message" 
-        placeholder="Message" 
-        value={formData.message} 
-        onChange={handleChange}
-      ></textarea>
-      <button type="submit">Send</button>
-    </form>
-  );
 }
 
 export default ContactForm;
