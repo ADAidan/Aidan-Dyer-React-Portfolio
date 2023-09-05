@@ -17,6 +17,12 @@ function ContactForm() {
         message: ''
     });
     const [error, setError] = useState(false);
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
     
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -47,15 +53,11 @@ function ContactForm() {
                 }));
             }
         }
-
-        const myForm = e.target;
-        const formData = new FormData(myForm);
-        console.log(formData);
         
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
+            body: encode({ "form-name": "contact", ...myFormData })
         })
             .then(() => alert("Form successfully submitted"))
             .catch((error) => alert(error));
