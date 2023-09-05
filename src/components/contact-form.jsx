@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { navigate } from 'gatsby';
 
 function ContactForm() {
     const [myFormData, setMyFormData] = useState({
@@ -60,7 +59,7 @@ function ContactForm() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...myFormData })
         })
-            .then(() => navigate("/thank-you/"))
+            .then(() => alert("/thank-you/"))
             .catch((error) => alert(error));
     };
 
