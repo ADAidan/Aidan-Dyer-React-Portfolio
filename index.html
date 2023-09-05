@@ -9,6 +9,17 @@
   </head>
   <body>
     <div id="root"></div>
+    <form 
+      name="enquiry-form" 
+      netlify 
+      netlify-honeypot="bot-field" 
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="text" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

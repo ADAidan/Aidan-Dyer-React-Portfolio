@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { navigate } from 'gatsby';
 
 function ContactForm() {
     const [myFormData, setMyFormData] = useState({
@@ -59,7 +60,7 @@ function ContactForm() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...myFormData })
         })
-            .then(() => alert("Form successfully submitted"))
+            .then(() => navigate("/thank-you/"))
             .catch((error) => alert(error));
     };
 
@@ -74,7 +75,10 @@ function ContactForm() {
             noValidate
             autoComplete="off"
             onSubmit={handleSubmit}
+            name='contact-form'
+            method='POST'
         >
+            <input type="hidden" name="form-name" value="contact-form" />
             <TextField 
                 fullWidth 
                 id="name" 
