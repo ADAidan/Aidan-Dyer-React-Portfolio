@@ -47,13 +47,19 @@ function ContactForm() {
         if (error) setError(false);
         let hasError = false;
         for (let key in myFormData) {
-            if (myFormData[key] == '') {
+            if (myFormData[key] === '' && key !== 'subject') {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
                     [key]: 'This field is required'
                 }));
                 hasError = true;
                 console.log(key)
+            } else if (key === 'email' && !/\S+@\S+\.\S+/.test(myFormData[key])) {
+                setFormErrors((formErrors) => ({
+                    ...formErrors,
+                    [key]: 'Please enter a valid email address'
+                }));
+                hasError = true;
             } else {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
@@ -99,6 +105,7 @@ function ContactForm() {
                 onChange={handleChange}
                 error={!!formErrors.name}
                 helperText={formErrors.name}
+                required
             />
             <TextField 
                 fullWidth 
@@ -111,6 +118,7 @@ function ContactForm() {
                 onChange={handleChange}
                 error={!!formErrors.email}
                 helperText={formErrors.email}
+                required
             />
             <TextField 
                 fullWidth 
@@ -137,6 +145,7 @@ function ContactForm() {
                 onChange={handleChange}
                 error={!!formErrors.message}
                 helperText={formErrors.message}
+                required
             />
             <Button 
                 variant="contained" 
