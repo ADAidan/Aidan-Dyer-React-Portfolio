@@ -51,7 +51,6 @@ function ContactForm() {
                     [key]: 'This field is required'
                 }));
                 setError(true);
-                return;
             } else {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
@@ -59,7 +58,7 @@ function ContactForm() {
                 }));
             }
         }
-        
+        if (!error) {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -67,6 +66,7 @@ function ContactForm() {
         })
             .then(() => thankYou())
             .catch((error) => alert(error));
+        }
 
         e.preventDefault();
     };
