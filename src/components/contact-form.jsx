@@ -33,8 +33,6 @@ function ContactForm() {
     };
 
     const handleSubmit = (e) => {
-        console.log('clicked submit');
-        console.log(myFormData);
         if (error) setError(false);
         for (let key in myFormData) {
             if (myFormData[key] === '') {
@@ -57,16 +55,7 @@ function ContactForm() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact-form", ...myFormData })
         })
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(() => {
-                console.log(data);
-                alert("/thank-you/");
-            })
+            .then(() => navigate("/thank-you/"))
             .catch((error) => alert(error));
 
         e.preventDefault();
