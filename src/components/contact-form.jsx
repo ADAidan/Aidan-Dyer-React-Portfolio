@@ -22,6 +22,16 @@ function ContactForm() {
         return Object.keys(data)
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&");
     }
+
+    const thankYou = () => {
+        setMyFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+        });
+        alert('Thank you for your message! I will get back to you as soon as possible.');
+    }
     
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -55,7 +65,7 @@ function ContactForm() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact-form", ...myFormData })
         })
-            .then(() => navigate("/thank-you/"))
+            .then(() => thankYou())
             .catch((error) => alert(error));
 
         e.preventDefault();
