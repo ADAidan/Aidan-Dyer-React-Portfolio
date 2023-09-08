@@ -36,7 +36,6 @@ function ContactForm() {
     const handleSubmit = (e) => {
         console.log('clicked submit');
         console.log(myFormData);
-        e.preventDefault();
         if (error) setError(false);
         for (let key in myFormData) {
             if (myFormData[key] === '') {
@@ -61,6 +60,8 @@ function ContactForm() {
         })
             .then(() => alert("/thank-you/"))
             .catch((error) => alert(error));
+            
+        e.preventDefault();
     };
 
     return (
