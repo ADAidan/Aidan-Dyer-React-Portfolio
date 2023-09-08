@@ -45,13 +45,15 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (error) setError(false);
+        let hasError = false;
         for (let key in myFormData) {
-            if (myFormData[key] === '') {
+            if (myFormData[key] == '') {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
                     [key]: 'This field is required'
                 }));
-                setError(true);
+                hasError = true;
+                console.log(key)
             } else {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
@@ -59,7 +61,7 @@ function ContactForm() {
                 }));
             }
         }
-        if (error) return;
+        if (hasError) setError(true);
         else {
             fetch("/", {
                 method: "POST",
