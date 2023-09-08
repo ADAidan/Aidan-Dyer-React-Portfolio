@@ -82,6 +82,7 @@ function ContactForm() {
                 fullWidth 
                 id="name" 
                 label="Name" 
+                name="name"
                 variant="outlined" 
                 margin='normal'
                 value={myFormData.name}
@@ -93,6 +94,7 @@ function ContactForm() {
                 fullWidth 
                 id="email" 
                 label="Email" 
+                name="email"
                 variant="outlined" 
                 margin='normal'
                 value={myFormData.email}
@@ -104,6 +106,7 @@ function ContactForm() {
                 fullWidth 
                 id="subject" 
                 label="Subject" 
+                name="subject"
                 variant="outlined" 
                 margin='normal'
                 value={myFormData.subject}
@@ -117,6 +120,7 @@ function ContactForm() {
                 rows={5} 
                 id="message" 
                 label="Message" 
+                name="message"
                 variant="outlined" 
                 margin='normal'
                 value={myFormData.message}
