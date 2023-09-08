@@ -55,7 +55,7 @@ function ContactForm() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...myFormData })
+            body: encode({ "contact-form": "contact", ...myFormData })
         })
             .then((response) => {
                 if (!response.ok) {
@@ -84,7 +84,7 @@ function ContactForm() {
             autoComplete="off"
             onSubmit={handleSubmit}
             name='contact-form'
-            method='POST'
+            data-netlify='true'
         >
             <input type="hidden" name="form-name" value="contact-form" />
             <TextField 
