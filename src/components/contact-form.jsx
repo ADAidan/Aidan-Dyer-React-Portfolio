@@ -20,8 +20,7 @@ function ContactForm() {
 
     const encode = (data) => {
         return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-            .join("&");
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&");
     }
     
     const handleChange = (e) => {
@@ -58,9 +57,18 @@ function ContactForm() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...myFormData })
         })
-            .then(() => alert("/thank-you/"))
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(() => {
+                console.log(data);
+                alert("/thank-you/");
+            })
             .catch((error) => alert(error));
-            
+
         e.preventDefault();
     };
 
