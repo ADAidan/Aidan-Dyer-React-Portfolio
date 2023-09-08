@@ -43,6 +43,7 @@ function ContactForm() {
     };
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         if (error) setError(false);
         for (let key in myFormData) {
             if (myFormData[key] === '') {
@@ -58,17 +59,16 @@ function ContactForm() {
                 }));
             }
         }
-        if (!error) {
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact-form", ...myFormData })
-        })
-            .then(() => thankYou())
-            .catch((error) => alert(error));
+        if (error) return;
+        else {
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact-form", ...myFormData })
+            })
+                .then(() => thankYou())
+                .catch((error) => alert(error));
         }
-
-        e.preventDefault();
     };
 
     return (
