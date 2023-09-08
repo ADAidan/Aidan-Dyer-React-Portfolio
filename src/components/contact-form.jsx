@@ -55,7 +55,7 @@ function ContactForm() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "contact-form": "contact", ...myFormData })
+            body: encode({ "form-name": "contact-form", ...myFormData })
         })
             .then((response) => {
                 if (!response.ok) {
