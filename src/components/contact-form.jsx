@@ -53,7 +53,6 @@ function ContactForm() {
                     [key]: 'This field is required'
                 }));
                 hasError = true;
-                console.log(key)
             } else if (key === 'email' && !/\S+@\S+\.\S+/.test(myFormData[key])) {
                 setFormErrors((formErrors) => ({
                     ...formErrors,
