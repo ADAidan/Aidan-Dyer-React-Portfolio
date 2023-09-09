@@ -9,10 +9,44 @@ export default function ContactInfo() {
         <div className='contact-container'>
             <div className="contact-info">
                 <h1>Contact Info</h1>
-                <p><FontAwesomeIcon icon={faPhone} /><a>401-390-9638</a></p>
-                <p><FontAwesomeIcon icon={faEnvelope} /><a>ADyer4201@gmail.com</a></p>
-                <p><FontAwesomeIcon icon={faGithub} /><a href='https://github.com/ADAidan' target='_blank'>ADAidan</a></p>
-                <p><FontAwesomeIcon icon={faLinkedin} /><a href='https://www.linkedin.com/in/aidan-dyer-017462224/' target='_blank'>Aidan Dyer</a></p>
+                <p className='icon-container'>
+                    <div className='icon-border'>
+                        <FontAwesomeIcon 
+                        icon={faPhone} 
+                        className='icon'
+                        fixedWidth/>
+                    </div>
+                    <a>401-390-9638</a>
+                </p>
+                <p className='icon-container'>
+                    <div className='icon-border'>
+                        <FontAwesomeIcon 
+                        icon={faEnvelope} 
+                        className='icon' 
+                        fixedWidth/>
+                    </div>
+                    <a>ADyer4201@gmail.com</a>
+                </p>
+                <p className='icon-container'>
+                    <div className='icon-border'>
+                        <FontAwesomeIcon 
+                        icon={faGithub}
+                        className='icon'  
+                        fixedWidth/>
+                    </div>
+                    <a href='https://github.com/ADAidan' 
+                    target='_blank'>ADAidan</a>
+                </p>
+                <p className='icon-container'>
+                    <div className='icon-border'>
+                        <FontAwesomeIcon 
+                        icon={faLinkedin} 
+                        className='icon' 
+                        fixedWidth/>
+                    </div>
+                    <a href='https://www.linkedin.com/in/aidan-dyer-017462224/' 
+                    target='_blank'>Aidan Dyer</a>
+                </p>
             </div>
             <div className='resume-contact-form-container'>
                 <div className='resume-container'>

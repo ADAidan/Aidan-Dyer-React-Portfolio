@@ -16,7 +16,6 @@ export default function NavBar() {
             </div>
             <div className='mobile-menu'>
                 <h2 className='my-name'>Aidan Dyer</h2>
-                <p>Menu</p>
             </div>
         </div>
     )
