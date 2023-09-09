@@ -1,8 +1,76 @@
+@media (min-width: 0px) and (max-width: 768px) {
+    .app-container .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        color: var(--primary-color);
+        background-color: #FFF;
+    }
+    
+    .app-container .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .app-container .contact-info p {
+        font-size: 2rem;
+        margin: 0;
+        padding: .5rem;
+        color: var(--primary-color);
+    }
+    
+    .app-container .contact-info a {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0;
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+    
+    .app-container .resume-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    
+    .app-container .resume-container p {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: .5rem;
+        color: var(--primary-color);
+    }
+    
+    .app-container .resume-container a {
+        margin: 1rem;
+        padding: 0;
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+    
+    .app-container .resume-links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .app-container .resume-contact-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: .5fr 1fr;
   padding: 0;
   color: var(--primary-color);
+  background-color: #FFF;
 }
 
 .contact-info {
@@ -10,7 +78,6 @@
   flex-direction: column;
   align-items: start;
   padding: 0 1rem;
-  background-color: var(--background-color);
 }
 
 .contact-info p {
@@ -60,5 +127,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFF;
 }
