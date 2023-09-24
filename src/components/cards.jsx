@@ -1,4 +1,4 @@
-import './cards.css';
+import './cards.scss';
 
 export const ProjectCard = (props) => {
     return (

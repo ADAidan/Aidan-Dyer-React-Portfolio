@@ -6,7 +6,7 @@ import PersonalProjects from './components/personal-projects';
 import CourseProjects from './components/course-projects';
 import Certifications from './components/certifications';
 import ContactInfo from './components/contact-info';
-import './App.css';
+import './App.scss';
 
 function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

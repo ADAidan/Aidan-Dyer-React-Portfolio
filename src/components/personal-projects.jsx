@@ -5,7 +5,7 @@ import ChessWebsite from '/images/react-chess.png';
 import ReactNotes from '/images/notes-project.png';
 import StocksDashboard from '/images/stocks-dashboard.png';
 import JavaScriptCalculator from '/images/calculator-project.png';
-import './projects.css';
+import './projects.scss';
 
 export default function PersonalProjects() {
     return (

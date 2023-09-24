@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope, faDownload, faFile } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from './contact-form';
-import './contact-info.css';
+import './contact-info.scss';
 
 export default function ContactInfo() {
     return (

@@ -1,4 +1,4 @@
-import './home-page.css'
+import './home-page.scss'
 
 export default function HomePage() {
     return (
