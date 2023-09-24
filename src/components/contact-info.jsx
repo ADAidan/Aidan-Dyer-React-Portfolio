@@ -16,7 +16,7 @@ export default function ContactInfo() {
                         className='icon'
                         fixedWidth/>
                     </div>
-                    <a>401-390-9638</a>
+                    <a href='tel:401-390-9638'>401-390-9638</a>
                 </p>
                 <p className='icon-container'>
                     <div className='icon-border'>
@@ -25,7 +25,7 @@ export default function ContactInfo() {
                         className='icon' 
                         fixedWidth/>
                     </div>
-                    <a>ADyer4201@gmail.com</a>
+                    <a href='mailto:adyer4201@gmail.com'>ADyer4201@gmail.com</a>
                 </p>
                 <p className='icon-container'>
                     <div className='icon-border'>
@@ -52,8 +52,16 @@ export default function ContactInfo() {
                 <div className='resume-container'>
                     <h1>My Resume</h1>
                     <div className='resume-links-container'>
-                        <p><FontAwesomeIcon icon={faFile} /><a href="/aidan_dyer_resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a></p>
-                        <p><FontAwesomeIcon icon={faDownload} /><a href='/aidan_dyer_resume.pdf' download>Download Resume</a></p>
+                        <p>
+                            <FontAwesomeIcon icon={faFile} />
+                            <a href="/aidan_dyer_resume.pdf" target="_blank" 
+                            rel="noopener noreferrer">View Resume</a>
+                        </p>
+                        <p>
+                            <FontAwesomeIcon icon={faDownload} />
+                            <a href='/aidan_dyer_resume.pdf' 
+                            download>Download Resume</a>
+                        </p>
                     </div>
                 </div>
                 <div className='contactform-container'>
