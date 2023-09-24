@@ -1,18 +1,13 @@
+@import './styles/variables.scss';
+
 :root {
-  --primary-color: #EF3E36;
-  --secondary-color: #28AFB0;
-  --accent-color: #FDCB6E;
-  --text-color: #393D3F;
-  --background-color: #E0E0E0;
-  --secondary-background-color: #FFFFFF;
-  
   font-family: 'Merriweather Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: $text-color;
+  background-color: $background-color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

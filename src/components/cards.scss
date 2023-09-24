@@ -1,32 +1,34 @@
+@import '../styles/variables.scss';
+
 .project-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    background-color: var(--secondary-background-color);
-    box-shadow: var(--accent-color) 0px 0px 5px 0px;
+    background-color: $secondary-background-color;
+    box-shadow: $accent-color 0px 0px 5px 0px;
     margin: .5rem;
     padding: 1rem;
 }
 
 .project-card img {
-    box-shadow: var(--accent-color) 0px 0px 5px 1px;
+    box-shadow: $accent-color 0px 0px 5px 1px;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
 .completion-date {
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .certification-card {
     display: flex;
     align-items: center;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 1rem;
-    box-shadow: var(--accent-color) 0px 0px 5px 0px;
-    background-color: var(--secondary-background-color);
+    box-shadow: $accent-color 0px 0px 5px 0px;
+    background-color: $secondary-background-color;
     margin: 1rem;
     padding: .5rem;
 }
@@ -51,8 +53,8 @@
 }
 
 .card-button-outline {
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.3s ease-in-out;
@@ -60,23 +62,23 @@
 }
 
 .card-button-outline:hover {
-    background-color: var(--secondary-color);
-    color: var(--secondary-background-color);
+    background-color: $secondary-color;
+    color: $secondary-background-color;
 }
 
 .card-button-solid {
-    background-color: var(--secondary-color);
-    color: var(--secondary-background-color);
+    background-color: $secondary-color;
+    color: $secondary-background-color;
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
 .card-button-solid:hover {
-    background-color: var(--secondary-background-color);
-    color: var(--secondary-color);
+    background-color: $secondary-background-color;
+    color: $secondary-color;
 }
 
 .card-title {
-    color: var(--secondary-color);
+    color: $secondary-color;
 }

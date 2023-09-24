@@ -1,6 +1,5 @@
 import { CertificationCard } from "./cards";
 import HarvardLogo from '/images/harvard_logo.jpg';
-import './cards.scss'
 
 export default function Certifications() {
     return (
