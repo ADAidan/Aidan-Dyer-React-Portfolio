@@ -9,10 +9,14 @@
   }
 }
 
+.nav-container {
+  border-bottom: $secondary-background-color 1px solid;
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 1.5fr 5fr 1.5fr;
-  background-color: $secondary-background-color;
+  background-color: $background-color;
   grid-row: 1;
   padding: 0;
 }

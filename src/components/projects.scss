@@ -35,9 +35,9 @@ $shadow-color3: #0f6050;
     padding: 0 1rem;
     border-radius: 1rem;
     color: $secondary-color;
-    background-color: $secondary-background-color;
+    background-color: $background-color;
     text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $accent-color 0px 0px 5px 0px;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
   }
 
   .other-projects {
@@ -47,9 +47,9 @@ $shadow-color3: #0f6050;
     padding: 0 1rem;
     border-radius: 1rem;
     color: $secondary-color;
-    background-color: $secondary-background-color;
+    background-color: $background-color;
     text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $accent-color 0px 0px 5px 0px;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
   }
 }
 
@@ -66,8 +66,8 @@ $shadow-color3: #0f6050;
     padding: 0 1rem;
     border-radius: 1rem;
     color: $secondary-color;
-    background-color: $secondary-background-color;
+    background-color: $background-color;
     text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $accent-color 0px 0px 5px 0px;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
   }
 }

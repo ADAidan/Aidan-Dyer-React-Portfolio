@@ -4,15 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;
-    background-color: $secondary-background-color;
-    box-shadow: $accent-color 0px 0px 5px 0px;
+    border-radius: .5rem;
+    background-color: $background-color;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
     margin: .5rem;
     padding: 1rem;
 }
 
 .project-card img {
-    box-shadow: $accent-color 0px 0px 5px 1px;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -25,10 +25,9 @@
 .certification-card {
     display: flex;
     align-items: center;
-    border: 1px solid $accent-color;
-    border-radius: 1rem;
-    box-shadow: $accent-color 0px 0px 5px 0px;
-    background-color: $secondary-background-color;
+    border-radius: .5rem;
+    box-shadow: $shadow-color -1px 1px 3px 0px;
+    background-color: $background-color;
     margin: 1rem;
     padding: .5rem;
 }
@@ -63,19 +62,19 @@
 
 .card-button-outline:hover {
     background-color: $secondary-color;
-    color: $secondary-background-color;
+    color: $background-color;
 }
 
 .card-button-solid {
     background-color: $secondary-color;
-    color: $secondary-background-color;
+    color: $background-color;
     border-radius: 1rem;
     padding: 1rem;
     transition: all 0.3s ease-in-out;
 }
 
 .card-button-solid:hover {
-    background-color: $secondary-background-color;
+    background-color: $background-color;
     color: $secondary-color;
 }
 
