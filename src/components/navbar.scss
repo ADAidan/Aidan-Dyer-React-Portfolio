@@ -1,3 +1,5 @@
+@import '../styles/variables.scss';
+
 @media (min-width: 0px) and (max-width: 768px) {
   .nav-container .navbar {
     display: none;
@@ -7,10 +9,14 @@
   }
 }
 
+.nav-container {
+  border-bottom: $secondary-background-color 1px solid;
+}
+
 .navbar {
   display: grid;
   grid-template-columns: 1.5fr 5fr 1.5fr;
-  background-color: var(--secondary-background-color);
+  background-color: $background-color;
   grid-row: 1;
   padding: 0;
 }
@@ -20,7 +26,7 @@
 }
 
 .my-name {
-  color: var(--primary-color);
+  color: $primary-color;
   text-shadow: 1px 1px #d63628, 2px 2px #bf301f, 3px 3px #a72a16;
 }
 
@@ -37,14 +43,14 @@
   color: #fff;
   margin: 1rem;
   padding: 0 1rem;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   transition: all 0.1s ease;
 }
 
 .nav-items a:active {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-  transform: translate(2px, 2px); /* Creates the pressed effect */
+  transform: translate(2px, 2px);
 }
 
 .nav-items a:hover {
