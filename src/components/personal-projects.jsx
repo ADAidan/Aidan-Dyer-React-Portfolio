@@ -16,8 +16,8 @@ export default function PersonalProjects() {
         image={Concord}
         title="Concord"
         description="
-        Concord is a messaging ap built using React, Node.js, express, MongoDB 
-        handles real-time updates with socket.io and use authentication with JWT 
+        Concord is a messaging app built using React, Node.js, Express, MongoDB 
+        handles real-time updates with Socket.io and use authentication with JWT 
         and password hashing with bcrypt. As the sole developer of the project 
         I designed the website, created the backend and frontend and 
         implemented the database with Mongoose. Users can create an account,
