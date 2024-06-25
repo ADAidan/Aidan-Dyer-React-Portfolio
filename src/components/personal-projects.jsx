@@ -6,6 +6,7 @@ import ReactNotes from "/images/notes-project.png";
 import StocksDashboard from "/images/stocks-dashboard.png";
 import JavaScriptCalculator from "/images/calculator-project.png";
 import Concord from "/images/concord-message-page.png";
+import InteractivePhoto from "/images/interactive-photo.png";
 import "./projects.scss";
 
 export default function PersonalProjects() {
@@ -26,6 +27,18 @@ export default function PersonalProjects() {
         completionDate="June 2024"
         url="https://github.com/ADAidan/react-messaging-app/"
         demoUrl="https://concord-messaging.netlify.app/"
+      />
+      <ProjectCard
+        image={InteractivePhoto}
+        title="Interactive Photo Demo"
+        description="
+        This project is a sleek, modern website built using React and Vite, showcasing my ability to 
+        create engaging and interactive user interfaces. This project is designed as a demo to highlight 
+        key front-end development skills including animation, interactivity, and responsive design.
+        "
+        completionDate="June 2024"
+        url="https://github.com/ADAidan/Interactive-Photo"
+        demoUrl="https://adaidan.github.io/Interactive-Photo"
       />
       <ProjectCard
         image={ShoppingCart}
