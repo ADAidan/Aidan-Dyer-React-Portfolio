@@ -9,10 +9,6 @@
   }
 }
 
-.nav-container {
-  // border-bottom: $secondary-background-color 1px solid;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -75,11 +71,6 @@
 .neon-underline:hover div {
   width: 100%;
 }
-
-// .nav-items a:active {
-//   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
-//   transform: translate(2px, 2px);
-// }
 
 .full-neon-button:hover {
   text-shadow: 0 0 1rem $neon-color;

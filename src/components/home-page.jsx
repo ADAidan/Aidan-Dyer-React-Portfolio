@@ -2,18 +2,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./home-page.scss";
+import { Stack } from "@mui/material";
 
 export default function HomePage() {
   return (
-    <div className="about-container">
-      <h1>
-        Hello, my name is <em>Aidan Dyer</em>
-      </h1>
+    <Stack className="about-container">
+      <Stack
+        spacing={2}
+        sx={{
+          textAlign: "left",
+        }}
+      >
+        <h2>Hello, my name is </h2>
+        <h1>
+          <em>Aidan Dyer</em>
+        </h1>
+      </Stack>
       <p>
-        An aspiring <em>Front-end Developer</em> with a focus on <em>React</em>{" "}
-        and a strong foundation in <em>JavaScript</em> and{" "}
-        <em>modern web development practices</em>. I am seeking a position where
-        I can learn new skills and grow as a developer.
+        A <em>Full-Stack Developer</em> with a focus on <em>JavaScript </em>
+        with the <em>MERN Stack</em>. I develop
+        <em> Responsive user interfaces</em> which follow
+        <em> modern web development practices</em>.
       </p>
       <div className="neon-contacts">
         <div className="contacts-container">
@@ -47,6 +56,6 @@ export default function HomePage() {
         </div>
         <div className="neon-line" />
       </div>
-    </div>
+    </Stack>
   );
 }
