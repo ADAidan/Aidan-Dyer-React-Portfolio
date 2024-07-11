@@ -1,48 +1,57 @@
+import PropTypes from "prop-types";
 import "./cards.scss";
 
-export const ProjectCard = (props) => {
+export const ProjectCard = ({ image, title }) => {
   return (
-    <div className="project-card">
-      <img src={props.image} alt="image"></img>
-      <div className="project-info">
-        <h2 className="card-title">{props.title}</h2>
-        <p>{props.description}</p>
-        {props.completionDate && (
-          <p className="completion-date">Completed {props.completionDate}</p>
-        )}
-        <div className="card-button-container">
-          {props.url && (
-            <a className="card-button-solid" href={props.url} target="_blank">
-              View on Github
-            </a>
-          )}
-          {props.demoUrl && (
-            <a
-              className="card-button-outline"
-              href={props.demoUrl}
-              target="_blank"
-            >
-              Visit Website
-            </a>
-          )}
-        </div>
+    <div
+      className="card-image"
+      style={{
+        backgroundImage: `url(${image})`,
+      }}
+    >
+      <div className="card-details">
+        <h2 className="card-title">{title}</h2>
+        <button className="neon-card-button">Learn More</button>
       </div>
     </div>
   );
 };
 
-export const CertificationCard = (props) => {
+export const CertificationCard = ({
+  image,
+  title,
+  description,
+  completionTime,
+  url,
+}) => {
   return (
     <div className="certification-card">
-      <img src={props.image} alt="image"></img>
+      <img src={image} alt="image"></img>
       <div className="certification-info">
-        <h2>{props.title}</h2>
-        <p>{props.description}</p>
-        <p>{props.completionTime}</p>
-        <a className="card-button" href={props.url} target="_blank">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <p>{completionTime}</p>
+        <a className="card-button" href={url} target="_blank" rel="noreferrer">
           View Certificate
         </a>
       </div>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  completionDate: PropTypes.string,
+  url: PropTypes.string,
+  demoUrl: PropTypes.string,
+  image: PropTypes.string.isRequired,
+};
+
+CertificationCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  completionTime: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };

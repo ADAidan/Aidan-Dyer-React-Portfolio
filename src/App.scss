@@ -28,20 +28,11 @@
   text-align: center;
 }
 
-.app-container {
-  display: grid;
-  grid-template-rows: .5fr 5fr;
-}
-
 .certifications-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
-}
-
-.main-container {
-  margin: 0 10%;
 }
 
 .logo {

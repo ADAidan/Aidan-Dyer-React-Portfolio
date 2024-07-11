@@ -1,19 +1,8 @@
 @import '../styles/variables.scss';
 
-$primary-color: #28AFB0;
-$shadow-color1: #1f9a90;
-$shadow-color2: #177d70;
-$shadow-color3: #0f6050;
-
 @media (min-width: 0px) and (max-width: 768px) {
-  .app-container .personal-projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    background-color: #FFF;
-  }
-  .app-container .course-projects-container {
+  .personal-projects-container,
+  .course-projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,52 +11,23 @@ $shadow-color3: #0f6050;
   }
 }
 
-.personal-projects-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr auto 1fr ;
-  padding: 0;
-
-  .featured-projects {
-    grid-column: 1 / 3;
-    grid-row: auto;
-    margin: 1rem .5rem;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    color: $secondary-color;
-    background-color: $background-color;
-    text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $shadow-color -1px 1px 3px 0px;
-  }
-
-  .other-projects {
-    grid-column: 1 / 3;
-    grid-row: auto;
-    margin: .5rem;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    color: $secondary-color;
-    background-color: $background-color;
-    text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $shadow-color -1px 1px 3px 0px;
-  }
-}
-
+.personal-projects-container,
 .course-projects-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+}
 
-  .course-projects {
-    grid-column: 1 / 3;
-    grid-row: auto;
-    margin: 1rem .5rem;
-    padding: 0 1rem;
-    border-radius: 1rem;
-    color: $secondary-color;
-    background-color: $background-color;
-    text-shadow: 1px 1px $shadow-color1, 2px 2px $shadow-color2, 3px 3px $shadow-color3;
-    box-shadow: $shadow-color -1px 1px 3px 0px;
-  }
+.projects-header {
+  color: $neon-color;
+  font-weight: bold;
+  text-shadow: 0 0 1rem $neon-color;
+}
+
+.other-projects,
+.course-projects {
+  padding: 0 1rem;
+  border-radius: 1rem;
+  color: $secondary-color;
+  background-color: $background-color;
 }

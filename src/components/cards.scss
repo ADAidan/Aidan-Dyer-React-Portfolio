@@ -11,6 +11,76 @@
     padding: 1rem;
 }
 
+.image-container {
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: $neon-color;
+    font-weight: bold;
+    text-shadow: 0 0 1rem $neon-color;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.neon-card-button {
+    border: $neon-color 1px solid;
+    color: $secondary-color;
+    background-color: $neon-color;
+    padding: 1rem;
+    box-shadow: 0 0 .3rem $neon-color;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.neon-card-button:hover {
+    background-color: $secondary-color;
+    color: $neon-color;
+    border-color: $neon-color;
+    box-shadow: 0 0 1rem $neon-color;
+}
+
+.card-image {
+    width: 375px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.card-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-details:hover {
+    background-color: $background-color;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-details:hover * {
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+
 .project-card img {
     box-shadow: $shadow-color -1px 1px 3px 0px;
     width: 100%;
@@ -22,14 +92,24 @@
     color: $text-color;
 }
 
+.certificates-header {
+    color: $neon-color;
+    font-weight: bold;
+    text-shadow: 0 0 1rem $neon-color;
+}
+
 .certification-card {
     display: flex;
     align-items: center;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     box-shadow: $shadow-color -1px 1px 3px 0px;
     background-color: $background-color;
     margin: 1rem;
     padding: .5rem;
+}
+
+.certification-card * {
+    color: $neon-color;
 }
 
 .certification-card img {
@@ -56,7 +136,7 @@
     color: $secondary-color;
     border-radius: 1rem;
     padding: 1rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
     margin: 1rem;
 }
 
@@ -70,14 +150,10 @@
     color: $background-color;
     border-radius: 1rem;
     padding: 1rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
 
 .card-button-solid:hover {
     background-color: $background-color;
-    color: $secondary-color;
-}
-
-.card-title {
     color: $secondary-color;
 }

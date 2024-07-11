@@ -1,82 +1,61 @@
 @import '../styles/variables.scss';
 
 @media (min-width: 0px) and (max-width: 768px) {
-    .app-container .contact-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        color: $primary-color;
-        background-color: #FFF;
-    }
-    
-    .app-container .contact-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1rem;
-    }
-    
-    .app-container .contact-info p {
-        font-size: 2rem;
-        margin: 0;
-        padding: .5rem;
-        color: $primary-color;
-    }
-    
-    .app-container .contact-info a {
-        font-size: 1.5rem;
-        margin: 1rem;
-        padding: 0;
-        text-decoration: none;
-        color: $secondary-color;
-    }
-    
-    .app-container .resume-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1rem;
-    }
-    
-    .app-container .resume-container p {
-        font-size: 1.5rem;
-        margin: 0;
-        padding: .5rem;
-        color: $primary-color;
-    }
-    
-    .app-container .resume-container a {
-        margin: 1rem;
-        padding: 0;
-        text-decoration: none;
-        color: $secondary-color;
-    }
-    
-    .app-container .resume-links-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-    
+
+    .app-container .contact-container,
+    .app-container .contact-info,
+    .app-container .resume-container,
+    .app-container .resume-links-container,
     .app-container .resume-contact-form-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        color: $accent-color;
+        background-color: #FFF;
+    }
+
+    .app-container .contact-info,
+    .app-container .resume-container {
+        padding: 0 1rem;
+    }
+
+    .app-container .contact-info p,
+    .app-container .resume-container p {
+        font-size: 2rem;
+        margin: 0;
+        padding: .5rem;
+        color: $accent-color;
+    }
+
+    .app-container .contact-info a,
+    .app-container .resume-container a {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0;
+        text-decoration: none;
+        color: $secondary-color;
+    }
+
+    .app-container .resume-links-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: .5fr 1fr;
+  display: flex;
+	flex-direction: row;
+	width: 100%;
   padding: 0;
-  color: $primary-color;
-  background-color: #FFF;
+  color: $accent-color;
+  background-color: $secondary-color;
 }
 
 .contact-info {
   display: flex;
+	flex: 1;
   flex-direction: column;
   align-items: start;
   padding: 0 1rem;
@@ -86,7 +65,7 @@
     font-size: 2rem;
     margin: 0;
     padding: .5rem;
-    color: $primary-color;
+    color: $accent-color;
 }
 
 .contact-info a {
@@ -94,7 +73,7 @@
     margin: 1rem;
     padding: 0;
     text-decoration: none;
-    color: $secondary-color;
+    color: $primary-color;
 }
 
 .resume-container {
@@ -115,7 +94,7 @@
     margin: 1rem;
     padding: 0;
     text-decoration: none;
-    color: $secondary-color;
+    color: $primary-color;
 }
 
 .resume-links-container {
@@ -127,6 +106,7 @@
 
 .resume-contact-form-container {
     display: flex;
+		flex: 2;
     flex-direction: column;
     align-items: center;
 }
@@ -137,7 +117,7 @@
     justify-content: center;
     height: 45px;
     width: 45px;
-    border: 3px solid $primary-color;
+    border: 3px solid $accent-color;
     transform: rotate(45deg);
 }
 
